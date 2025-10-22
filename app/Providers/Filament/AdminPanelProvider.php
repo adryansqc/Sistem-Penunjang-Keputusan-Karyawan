@@ -33,7 +33,8 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::Amber,
             ])
             ->plugins([
-                FilamentBackgroundsPlugin::make(),
+                FilamentBackgroundsPlugin::make()
+                    ->showAttribution(false),
             ])
             ->brandName('Sistem Penunjang Keputusan')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')

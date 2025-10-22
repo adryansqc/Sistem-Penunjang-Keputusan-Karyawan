@@ -76,13 +76,14 @@
                     </table>
                 </div>
                 <div class="" style="margin-top: 20px;">
-                    <button type="button"
+                    {{-- <button type="button"
                             wire:click="triggerCalculateWeightsAndNotify"
                             wire:loading.attr="disabled"
                             wire:target="triggerCalculateWeightsAndNotify"
                             class="calculate-weights-button">
                         Hitung Bobot Kriteria
-                    </button>
+                    </button> --}}
+                    <p class="comparison-guide-title">Bobot otomatis terhitung ketika data diubah</p>
                 </div>
                 <div class="weights-section">
                     <div class="weights-section-header">
