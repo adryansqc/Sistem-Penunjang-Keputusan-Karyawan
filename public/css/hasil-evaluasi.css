@@ -1,0 +1,155 @@
+/* Base styles for the page container */
+.hasil-evaluasi-container {
+    margin-top: 1.5rem; /* space-y-6 */
+}
+
+/* Styles for the main content block */
+.hasil-evaluasi-card {
+    padding: 1rem; /* p-4 */
+    background-color: #ffffff; /* bg-white */
+    border-radius: 0.75rem; /* rounded-xl */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow */
+}
+
+.dark .hasil-evaluasi-card {
+    background-color: #1f2937; /* dark:bg-gray-800 */
+}
+
+/* Styles for section headers */
+.hasil-evaluasi-header-section {
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.hasil-evaluasi-header-title {
+    font-size: 1.125rem; /* text-lg */
+    line-height: 1.75rem; /* leading-7 */
+    font-weight: 500; /* font-medium */
+    color: #111827; /* text-gray-900 */
+}
+
+.dark .hasil-evaluasi-header-title {
+    color: #f9fafb; /* dark:text-gray-100 */
+}
+
+.hasil-evaluasi-header-description {
+    margin-top: 0.25rem; /* mt-1 */
+    font-size: 0.875rem; /* text-sm */
+    line-height: 1.25rem; /* leading-5 */
+    color: #4b5563; /* text-gray-600 */
+}
+
+.dark .hasil-evaluasi-header-description {
+    color: #9ca3af; /* dark:text-gray-400 */
+}
+
+/* Styles for the button */
+.hasil-evaluasi-button-wrapper {
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.hasil-evaluasi-button {
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #ffffff; /* text-white */
+    background-color: #4f46e5; /* bg-primary-600 */
+    border-radius: 0.5rem; /* rounded-lg */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.hasil-evaluasi-button:hover {
+    background-color: #6366f1; /* hover:bg-primary-500 */
+}
+
+.hasil-evaluasi-button:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #4f46e5; /* focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 */
+}
+
+/* Styles for the table container */
+.hasil-evaluasi-table-container {
+    overflow-x: auto; /* overflow-x-auto */
+}
+
+.hasil-evaluasi-table {
+    min-width: 100%; /* min-w-full */
+    border-collapse: collapse;
+}
+
+.hasil-evaluasi-table-head {
+    background-color: #f9fafb; /* bg-gray-50 */
+}
+
+.dark .hasil-evaluasi-table-head {
+    background-color: #374151; /* dark:bg-gray-700 */
+}
+
+.hasil-evaluasi-table-head th {
+    padding: 0.75rem 1.5rem; /* px-6 py-3 */
+    text-align: left; /* text-left */
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 500; /* font-medium */
+    color: #6b7280; /* text-gray-500 */
+    text-transform: uppercase; /* uppercase */
+    letter-spacing: 0.05em; /* tracking-wider */
+    border-bottom: 1px solid #e5e7eb; /* divide-y divide-gray-200 */
+}
+
+.dark .hasil-evaluasi-table-head th {
+    color: #9ca3af; /* dark:text-gray-400 */
+    border-bottom-color: #4b5563; /* dark:divide-gray-700 */
+}
+
+.hasil-evaluasi-table-body {
+    background-color: #ffffff; /* bg-white */
+}
+
+.dark .hasil-evaluasi-table-body {
+    background-color: #1f2937; /* dark:bg-gray-800 */
+}
+
+.hasil-evaluasi-table-body tr {
+    border-bottom: 1px solid #e5e7eb; /* divide-y divide-gray-200 */
+}
+
+.dark .hasil-evaluasi-table-body tr {
+    border-bottom-color: #4b5563; /* dark:divide-gray-700 */
+}
+
+.hasil-evaluasi-table-body td {
+    padding: 1rem 1.5rem; /* px-6 py-4 */
+    white-space: nowrap; /* whitespace-nowrap */
+    font-size: 0.875rem; /* text-sm */
+}
+
+.hasil-evaluasi-table-body td.rank {
+    font-weight: 500; /* font-medium */
+    color: #111827; /* text-gray-900 */
+}
+
+.dark .hasil-evaluasi-table-body td.rank {
+    color: #f9fafb; /* dark:text-gray-100 */
+}
+
+.hasil-evaluasi-table-body td.data {
+    color: #6b7280; /* text-gray-500 */
+}
+
+.dark .hasil-evaluasi-table-body td.data {
+    color: #9ca3af; /* dark:text-gray-400 */
+}
+
+.hasil-evaluasi-table-empty {
+    padding: 1rem 1.5rem; /* px-6 py-4 */
+    white-space: nowrap; /* whitespace-nowrap */
+    font-size: 0.875rem; /* text-sm */
+    color: #6b7280; /* text-gray-500 */
+    text-align: center; /* text-center */
+}
+
+.dark .hasil-evaluasi-table-empty {
+    color: #9ca3af; /* dark:text-gray-400 */
+}

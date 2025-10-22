@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+@import "../../../../vendor/filament/filament/resources/css/base.css";
+
+@config 'tailwind.config.js';
+
+.btn-gradient-primary {
+    @apply text-white font-semibold px-4 py-2 rounded-lg shadow-md
+         transform transition ease-in-out;
+    background-size: 200% 200%;
+    background-image: linear-gradient(
+        to right,
+        theme("colors.blue.500"),
+        theme("colors.blue.600"),
+        theme("colors.blue.500")
+    );
+    transition: background-position 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-gradient-primary:hover {
+    background-position: 100% 0;
+    transform: scale(1.05) rotate(1deg);
+}
+
+.btn-gradient-info {
+    @apply text-white font-semibold px-4 py-2 rounded-lg shadow-md
+         transform transition ease-in-out;
+    background-size: 200% 200%;
+    background-image: linear-gradient(
+        to right,
+        theme("colors.sky.500"),
+        theme("colors.sky.600"),
+        theme("colors.sky.500")
+    );
+    transition: background-position 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-gradient-info:hover {
+    background-position: 100% 0;
+    transform: scale(1.05) rotate(1deg);
+}
+
+.btn-gradient-success {
+    @apply text-white font-semibold px-4 py-2 rounded-lg shadow-md
+         transform transition ease-in-out;
+    background-size: 200% 200%;
+    background-image: linear-gradient(
+        to right,
+        theme("colors.green.500"),
+        theme("colors.green.600"),
+        theme("colors.green.500")
+    );
+    transition: background-position 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-gradient-success:hover {
+    background-position: 100% 0;
+    transform: scale(1.05) rotate(1deg);
+}
+
+.btn-gradient-warning {
+    @apply text-white font-semibold px-4 py-2 rounded-lg shadow-md
+         transform transition ease-in-out;
+    background-size: 200% 200%;
+    background-image: linear-gradient(
+        to right,
+        theme("colors.yellow.500"),
+        theme("colors.yellow.600"),
+        theme("colors.yellow.500")
+    );
+    transition: background-position 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-gradient-warning:hover {
+    background-position: 100% 0;
+    transform: scale(1.05) rotate(1deg);
+}
+
+.btn-gradient-danger {
+    @apply text-white font-semibold px-4 py-2 rounded-lg shadow-md
+         transform transition ease-in-out;
+    background-size: 200% 200%;
+    background-image: linear-gradient(
+        to right,
+        theme("colors.red.500"),
+        theme("colors.red.600"),
+        theme("colors.red.500")
+    );
+    transition: background-position 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-gradient-danger:hover {
+    background-position: 100% 0;
+    transform: scale(1.05) rotate(1deg);
+}
+
+.btn-gradient-secondary {
+    @apply text-white font-semibold px-4 py-2 rounded-lg shadow-md
+         transform transition ease-in-out;
+    background-size: 200% 200%;
+    background-image: linear-gradient(
+        to right,
+        theme("colors.slate.500"),
+        theme("colors.slate.600"),
+        theme("colors.slate.500")
+    );
+    transition: background-position 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn-gradient-secondary:hover {
+    background-position: 100% 0;
+    transform: scale(1.05) rotate(1deg);
+}
