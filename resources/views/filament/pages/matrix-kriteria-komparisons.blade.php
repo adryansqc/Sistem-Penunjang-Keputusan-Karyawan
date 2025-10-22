@@ -77,9 +77,9 @@
                 </div>
                 <div class="" style="margin-top: 20px;">
                     <button type="button"
-                            wire:click="calculateWeights"
+                            wire:click="triggerCalculateWeightsAndNotify"
                             wire:loading.attr="disabled"
-                            wire:target="calculateWeights"
+                            wire:target="triggerCalculateWeightsAndNotify"
                             class="calculate-weights-button">
                         Hitung Bobot Kriteria
                     </button>

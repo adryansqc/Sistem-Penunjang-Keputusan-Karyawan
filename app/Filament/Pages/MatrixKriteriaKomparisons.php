@@ -13,7 +13,7 @@ use Filament\Support\Icons\Heroicon;
 
 class MatrixKriteriaKomparisons extends Page
 {
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::DocumentMagnifyingGlass;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::DocumentChartBar;
 
     protected string $view = 'filament.pages.matrix-kriteria-komparisons';
 
@@ -132,10 +132,24 @@ class MatrixKriteriaKomparisons extends Page
             }
         }
 
+        // Hapus notifikasi dari sini
         // Notification::make()
         //     ->title('Bobot kriteria berhasil dihitung dan disimpan.')
         //     ->success()
         //     ->send();
+    }
+
+    /**
+     * Triggers the weight calculation and sends a notification.
+     */
+    public function triggerCalculateWeightsAndNotify(): void
+    {
+        $this->calculateWeights();
+
+        Notification::make()
+            ->title('Bobot kriteria berhasil dihitung dan disimpan.')
+            ->success()
+            ->send();
     }
 
     /**
